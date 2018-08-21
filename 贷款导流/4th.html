@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+<div class="container firstdiv">
+    <b class="circle"></b>
+    <div>
+        <h1>点击上传手持身份证</h1>
+        <div class="photo">
+            <div class="file">
+                <img src="images/add.png" alt="" class="add">
+                <img src="" alt="" style="display: none" class="fileImg">
+                <input type="file">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>上传身份证正面</h1>
+        <div class="photo">
+            <div class="file">
+                <img src="images/add.png" alt="" class="add">
+                <img src="" alt="" style="display: none" class="fileImg">
+                <input type="file">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>上传身份证反面</h1>
+        <div class="photo">
+            <div class="file">
+                <img src="images/add.png" alt="" class="add">
+                <img src="" alt="" style="display: none" class="fileImg">
+                <input type="file">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>注意事项</h2>
+
+    1.身份证上所有信息清晰 <br>
+    2.照片需免冠，建议未化妆，手持证件五官清晰可见<br>
+    3.支持jpg、jpeg、gif格式照片<br>
+    </p>
+
+</div>
+</div>
+<div class="container">
+    <b class="circle"></b>
+    <div class="form-content">
+        <form action="">
+            <div>
+                <span>真实姓名</span> <input type="text" placeholder="请输入您的真实姓名">
+            </div>
+            <div>
+                <span>身份证号</span> <input type="text" placeholder="请输入您的身份证号">
+            </div>
+            <div>
+                <span>身份证地址</span> <input type="text" placeholder="请输入您的身份证地址">
+            </div>
+            <div>
+                <span>银行卡号</span> <input type="text" placeholder="请输入您的银行卡号">
+            </div>
+            <div>
+                <span>银行开户行</span> <input type="text" placeholder="请输入您的银行开户行">
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<button class="next" type="button">立即申请</button>
+
+<!--
+<form action="">
+    <select name="" id=""></select>
+    <input type="text">
+    <input type="text">
+</form>
+-->
+
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $('.file input').on('change', function () {
+        var url = window.URL.createObjectURL(this.files[0]);
+        $(this).siblings('.add').hide()
+        $(this).siblings('.fileImg').attr('src', url).show();
+    });
+</script>
+</html>

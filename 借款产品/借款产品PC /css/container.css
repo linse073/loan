@@ -1,0 +1,149 @@
+.container{
+   width: 1200px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 190px;
+}
+.title{
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 31px;
+}
+.content{
+    height: 270px;
+    background: #f7fbfd;
+    position: relative;
+    padding-top:65.6px ;
+
+}
+.content ul{
+    overflow: hidden;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    width: 100%;
+
+}
+.content ul li{
+   display: inline-block;
+    height: 139px;
+    line-height: 139px;
+    border-right: 1px dotted #ddd;
+    text-align: center;
+    position: relative;
+}
+.content ul li>div{
+   position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    line-height: 30px;
+    width: 100%;
+}
+.content ul li:first-child{
+
+    width:181px; ;
+}
+.content ul li:nth-child(2){
+   width: 296px;
+}
+.content ul li:nth-child(3){
+    width: 372px;
+}
+.content ul li:last-child{
+    width: 180px;
+    border: none;
+}
+.content ul li span{
+    color: #fc7823;
+    font-size: 36px;
+}
+.content ul li div{
+    font-size: 16px;
+    color: #666666;
+}
+.percent{
+    font-size: 20px!important;
+}
+.content2{
+    margin-top: 30px;
+    box-shadow: 0px 0px 20px 0px  #d5e1e7;
+    padding-bottom: 85px;
+    position: relative;
+}
+.application{
+    background: url(../img/jux.png) no-repeat;
+    width: 226px;
+    height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 29px;
+
+}
+.application-content{
+    margin-bottom: 29px;
+}
+.application-content  li{
+    padding-left: 30px;
+    line-height: 30px;
+}
+.application-content  li span{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #333;
+
+}
+.application-content  li span:first-child{
+    width:100px; ;
+    color:#999
+
+}
+.application-materials li{
+    padding-left: 30px;
+    font-size: 16px;
+    color: #333;
+    line-height: 30px;
+}
+.application-materials li span{
+    display: inline-block;
+
+    width: 200px;
+}
+.ewm{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 220px;
+    text-align: center;
+}
+.ewm2{
+
+    right: 140px;
+
+}
+.content-2000 li{
+    width: 33%!important;
+}
+.apply{
+    width: 400px;
+    height: 100px;
+    background: #fc7823;
+    color: #fff;
+    margin-top: 65px;
+    font-size: 28px;
+   display: block;
+    border-radius: 10px;
+
+}

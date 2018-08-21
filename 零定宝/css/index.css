@@ -1,0 +1,234 @@
+.top-ts{
+    width: 100%;
+    height: 1.3226666666666667rem;
+    line-height: 1.3226666666666667rem;
+    padding-left: 0.6186666666666667rem;
+    font-size: 0.512rem;
+    color: #FA8638;
+    letter-spacing: 0;
+    background: #F7F7F7;
+}
+.form-group{
+    padding: 0px 0.6186666666666667rem;
+}
+.form-group>form>div{
+    font-size: 0.5973333333333334rem;
+    color: #4B4B4B;
+    letter-spacing: 0;
+    line-height: 1.7493333333333334rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.form-group>form>div>span:first-child{
+    display: inline-block;
+    width: 5rem;
+    white-space: nowrap;
+}
+.yyzz>div,.shxy>div{
+    font-size: 0.5973333333333334rem;
+    color: #4B4B4B;
+    letter-spacing: 0;
+    line-height: 1.7493333333333334rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.yyzz>div input,.shxy>div input{
+    width: 100%!important;
+}
+.form-group>form>div input[type='text']{
+    width: 50%;
+    font-size: 0.5973333333333334rem;
+    background: transparent;
+    height: 1.7066666666666668rem;
+
+}
+.form-group>form>div .percent{
+
+}
+.gdkz input{
+    width: 55%!important;
+}
+.choose-type{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 4.266666666666667rem;
+    height: 1.728rem;
+    background: none;
+    border: none;
+    font-size: 0.5973333333333334rem;
+
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+
+
+}
+.select-b{
+    display: inline-block;
+    background: url(../img/Shape@2x.png) no-repeat;
+    width:0.5333333333333333rem;
+    height: 0.2986666666666667rem;
+    background-size: 100% 100%;
+
+}
+.zlht .file-p{
+
+}
+.zlht>span{
+    display: inline-block;
+    vertical-align: top;
+}
+.file-p{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 55%;
+
+}
+.file-img img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.offfile{
+    width: 3.2rem;
+    height: 2.3466666666666667rem;
+    font-size: 0.3413333333333333rem;
+    color: #9E9E9E;
+    letter-spacing: 0;
+    text-align: center;
+    padding-top: 0.64rem;
+    line-height: 0px;
+    position: relative;
+    background: #F8F8F8;
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+.file-img{
+    width: 3.2rem;
+    height: 2.3466666666666667rem;
+    margin: 0.5333333333333333rem 0.21333333333333335rem 0.5333333333333333rem 0px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+}
+.file-img .add{
+    display: inline-block;
+    width: 0.64rem;
+    height: 0.64rem;
+    background: url(../img/jia.png) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0.384rem;
+}
+.file-p input{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top:0px;
+    cursor: pointer;
+}
+.jyfw{
+    text-align: center;
+}
+.jyfw textarea{
+    width: 15.146666666666667rem;
+    height: 7.061333333333334rem;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: inset 0.042666666666666665rem 0.042666666666666665rem 0.128rem 0 rgba(0,0,0,0.07);
+    border-radius: 8px;
+    resize: none;
+    font-size: 0.4266666666666667rem;
+    padding: 0.21333333333333335rem;
+}
+.next-btn{
+    width: 100%;
+    background: #FE6F00;
+    font-size: 0.6826666666666666rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 1.92rem;
+    margin-top: 0.4266666666666667rem;
+}
+.cityselect-title b{
+    position: absolute;
+    width: 0.4693333333333333rem;
+    height: 0.384rem;
+    background: url(../img/close.png);
+    background-size: 100% 100%;
+    top:0.768rem;
+    right: 0.512rem;
+}
+.cityselect-nav > a{
+    font-size: 0.64rem;
+}
+.cityselect-item-box > a{
+    font-size: 0.5973333333333334rem;
+}
+.cityselect-title{
+    font-size: 0.6826666666666666rem;
+}
+.m-cityselect{
+    height: 49%;
+}
+
+.modal{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+}
+.modal .modal-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 0.21333333333333335rem 0.4266666666666667rem;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size:0.6rem;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.xy{
+    font-size: 0.4693333333333333rem;
+    color: #CDCDCD;
+    letter-spacing: 0;
+    line-height: 1.3226666666666667rem;
+}
+.xy a{
+    color: #FE6F00;
+}
+.xy b{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/gou.png) no-repeat;
+    background-size: 100% 100%;
+    width: 0.5546666666666666rem;
+    height: 0.5546666666666666rem;
+
+    border-radius: 5px;
+    margin-right: 0.21333333333333335rem;
+}
+.xy b.active{
+    background: #F7F7F7;
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+}

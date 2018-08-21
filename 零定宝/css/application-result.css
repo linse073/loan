@@ -1,0 +1,33 @@
+.wrapper{
+    width:16rem;
+    margin:auto;
+    padding-top:3.2853333333333334rem;
+}
+.wrapper>div:first-child{
+    width:6.634666666666667rem;
+    height:5.930666666666666rem;
+    background: url(../img/sq.png) no-repeat;
+    background-size: 100% 100%;
+    margin:auto;
+}
+h2{
+    font-size: 1.0666666666666667rem;
+    color: #4B4B4B;
+    line-height: 1.7493333333333334rem;
+    text-align: center;
+    margin:1.8986666666666667rem auto 2.9226666666666667rem;
+    font-weight: normal;
+}
+.wrapper>a{
+    display: block;
+    width:11.733333333333333rem;
+    height:1.7066666666666668rem;
+    text-align: center;
+    background-image: linear-gradient(-90deg, #FFA800 0%, #FE6F00 100%);
+    box-shadow: 0 0.384rem 0.6613333333333333rem 0 rgba(0,0,0,0.12);
+    border-radius: 50px;
+    font-size: 0.64rem;
+    color: #FFFFFF;
+    line-height: 1.7493333333333334rem;
+    margin:auto;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container-wx">
+        <div class="top-ts">
+            请按照要求上传正确的照片
+        </div>
+        <div class="photo">
+            <h1>要求垂直俯拍、光线均匀、证照信息清晰</h1>
+            <div class="file">
+                <img src="img/photo_ts.png" alt="">
+                <input type="file" >
+            </div>
+        </div>
+        <div class="user_ifo">
+            <div>
+                <span>姓名 </span>
+                <input type="text" readonly>
+            </div>
+            <div>
+                <span>身份证号  </span>
+                <input type="text" readonly>
+            </div>
+
+        </div>
+        <div class="bottom-ts">
+            请仔细核对姓名和身份信息，如有误，请重新上传照片 拷贝
+        </div>
+        <button type="button" class="submit_btn">下一步</button>
+    </div>
+    <div class="modal">
+        <div class="modal-content">请输入6-16位字母和数字组合密码</div>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    /*按钮变色*/
+    function btnChange() {
+        $('.submit_btn').addClass('active')
+    }
+    /*预览上传图片*/
+    $('.file input').on('change', function () {
+        var url = window.URL.createObjectURL(this.files[0]);
+        $(this).siblings('img').attr('src', url);
+    });
+    /*提示框*/
+    function showModal(str) {
+        $('.modal').show();
+        $('.modal .modal-content').html(str);
+        setTimeout(function () {
+            $('.modal').hide();
+        },2000)
+    }
+    showModal(2223)
+</script>
+</html>

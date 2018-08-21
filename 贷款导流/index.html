@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/ydui.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-img"></div>
+        <div class="form-content">
+            <form action="" class="">
+
+                <div>
+                    <input type="text" placeholder="请输入手机号">
+                </div>
+                <div>
+                    <input type="text" placeholder="请输入验证码">
+                    <button type="button" class="yzm">请输入验证码</button>
+                </div>
+                <p class="agreement">
+                    <b></b>我已阅读并同意 <a href="">《用户注册协议》</a>
+                </p>
+                <button type="button" class="submit">
+                    提交
+                </button>
+            </form>
+        </div>
+
+    </div>
+    <div class="modal" style="display: none;">
+        <div class="modal-content">2223</div>
+    </div>
+   <!-- <div class="success-modal ">
+        <div class="success-modal-content">
+            <h1>提示 </h1>
+            <p>
+                您的借款申请已提交成功！<br>
+                客户经理会在24小时内联系您！
+            </p>
+            <button>关闭</button>
+        </div>
+    </div>-->
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/ydui.citys.js"></script>
+<script src="js/ydui.js"></script>
+<script>
+    !function () {
+        var a = $('#d1');
+        a.citySelect();
+        a.on('click', function (event) {
+
+            event.stopPropagation();
+            a.citySelect('open');
+        });
+
+        a.on('done.ydui.cityselect', function (ret) {
+            $(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+        });
+    }();
+   /* /!**
+     * 设置默认值
+     *!/
+    !function () {
+        var a = $('#d1');
+        a.citySelect({
+            provance: '新疆',
+            city: '乌鲁木齐市',
+            area: '天山区'
+        });
+
+        a.on('click', function (event) {
+            event.stopPropagation();
+            console.log(1)
+            a.citySelect('open');
+        });
+
+        a.on('done.ydui.cityselect', function (ret) {
+            $(this).val(ret.provance + ' ' + ret.city + ' ' + ret.area);
+        });
+    }();*/
+    $('.cityselect-title b').on('click',function () {
+        $('.mask-black').click();
+    })
+    /*倒计时*/
+    function codwn() {
+        var time = 3;
+        var show = document.getElementsByClassName('yzm')[0];
+        $(show).attr('disabled', 'true')
+        $(show).attr('disabled', 'true')
+        show.innerHTML = time + "s";
+        $(show).css('background' ,'#868686')
+        var init = setInterval(function () {
+            time--;
+            if (time > 0) {
+                show.innerHTML = time + "s";
+
+            } else {
+                clearInterval(init)
+                show.innerHTML = '重新发送';
+                $(show).removeAttr('disabled')
+                $(show).css('background' ,'#FF7901')
+                time = 60;
+            }
+
+        }, 1000)
+    }
+    $('.yzm').on('click',codwn);
+    /*提示框*/
+    function showModal(str) {
+        $('.modal').show();
+        $('.modal .modal-content').html(str);
+        setTimeout(function () {
+            $('.modal').hide();
+        },2000)
+    }
+    $('.success-modal-content button').on('click',function () {
+        $('.success-modal').hide()
+    })
+    $('.m-cityselect').on('click','.cityselect-item a',function () {
+        var hasClass=$(this).hasClass('crt')
+        if(!hasClass){
+            var num=$(this).parent().parent('.cityselect-item').index();
+            console.log(num)
+            if(num!=2){
+                $(this).parent().parent('.cityselect-item').hide().next().show();
+            }
+        }else{
+            return
+        }
+
+    })
+    $('.m-cityselect').on('click','.cityselect-nav > a',function () {
+       var num= $(this).index();
+       $($('.cityselect-item')[num]).show().siblings().hide();
+    })
+
+    $('.agreement b').on('click',function () {
+        $(this).toggleClass('active')
+    })
+</script>
+</html>

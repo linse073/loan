@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>借款详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+<div class="top-img">
+    <div class="top-container">
+        <div class="state">待放款</div>
+        <div class="totol-money">
+            <span>借款金额(元)</span>
+            <div class="num">200000.00</div>
+        </div>
+    </div>
+
+</div>
+<div class="loan-details">
+    <h1>
+        <b></b>
+        借款明细
+    </h1>
+    <ul>
+        <li>产品名称</li>
+        <li>零定贷个人版</li>
+        <li>借款金额</li>
+        <li>200000.00元</li>
+        <li>借款日期</li>
+        <li>2018-4-20</li>
+    </ul>
+</div>
+<div class="btnp">
+    <span>
+          <button class="btn agree">确认借款</button>
+
+        <span class="time"><span>0</span>时  <span>59</span>分  <span>20</span>秒</span>
+    </span>
+
+
+    <button class="btn cancel">放弃借款</button>
+</div>
+<div class="modal">
+    <div class="modal-content">
+            <h1>收费情况确认函</h1>
+        <div>
+            <h2>借款用户申明：</h2>
+            <p>
+                本人在意识清楚的情况下自愿达成上述《借款服务协议》，已阅读知悉《借款服务协议》项下所有因借款产生的费用明细。本人承诺非在校学生，具有完全民事行为能力，因   <span class="specal-span">1</span>       原因需要借款，具有偿还《借款服务协议》项下借款、利息和服务费的能力。《借款服务协议》约定的借款年化利率为   <span class="specal-span">1</span>    %，每期还款本息以及服务费明细以下表为准，本人对下述收费明细予以确认。
+            </p>
+            <table>
+                <tr>
+                    <th>期数（月）</th>
+                    <th>本金（元）</th>
+                    <th>利息（元）</th>
+                    <th>服务费（元）</th>
+                    <th>每期还款总金额（元）</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <div class="modal-btn">
+                <button>不同意</button>
+                <button>同意</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    function  hideModal() {
+        $('.modal').hide()
+    }
+    function showModal() {
+        $('.modal').show()
+    }
+
+</script>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贷款端倒流H5</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+
+	<link rel="stylesheet" href="css/index-gj.css">
+
+    <!--[if lt IE 9]>
+   	<script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script> 	
+   	<![endif]-->	
+  
+</head>
+<body class="spe-bgc">
+    <!--contact star-->
+    <section>
+    	 <div class="daoliu-boss-gj">
+    	 	<div class="main-boss-gj">
+    	 		<h3>紧急联系人1</h3>
+    	 		<dl>
+    	 			<dt>关系</dt>
+    	 			<dd class="guanxi-gj guanxi-gj1 d1 " onclick="addMsg(this)" ><input type="text" name="gx" id="gx1" placeholder="请选择" /></dd>
+    	 		</dl>
+    	 		<dl>
+    	 			<dt>姓名</dt>
+    	 			<dd><input type="text" name="name" placeholder="请输入姓名" /></dd>
+    	 		</dl>
+    	 		<dl>
+    	 			<dt>手机号码</dt>
+    	 			<dd><input type="text" name="Pnumber" placeholder="请输入手机号码" /></dd>
+    	 		</dl>
+    	 	</div>
+    	 	<div class="main-boss-gj">
+    	 		<h3>紧急联系人2</h3>
+    	 		<dl>
+    	 			<dt>关系</dt>
+    	 			<dd class="guanxi-gj guanxi-gj2 d2" onclick="addMsg(this)"><input type="text" name="gx2" id="gx2" placeholder="请选择" /></dd>
+    	 		</dl>
+    	 		<dl>
+    	 			<dt>姓名</dt>
+    	 			<dd><input type="text" name="name2" placeholder="请输入姓名" /></dd>
+    	 		</dl>
+    	 		<dl>
+    	 			<dt>手机号码</dt>
+    	 			<dd><input type="text" name="Pnumber2" placeholder="请输入手机号码" /></dd>
+    	 		</dl>
+    	 	</div>
+    	 	<div class="btn-boss">
+    	 		<button type="submit">立即提交</button>
+    	 	</div>
+    	 </div>
+    	
+    </section> 
+    	
+  
+    <!--兑换弹窗-->
+     <div class="popup-boss" id="tc-dome3" style="display: none;">
+		<div class="popup-main">
+			<div class="gx-msg-gj">
+				<h5>请选择和紧急联系人的关系</h5>
+				<p class="spe-gx">配偶</p>
+				<p class="spe-gx">父母</p>
+				<p class="spe-gx">子女</p>
+				<p class="spe-gx">兄弟</p>
+				<p class="spe-gx">姐妹</p>
+			</div>
+			<div class="popup-colse">取消</div>
+		</div>
+	</div>
+    
+    <script src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+
+
+		   $(".popup-colse").on("click",function(){
+			  hidePopup();
+		   });
+       //显示弹窗
+		 function showPopup() {
+	       $('.popup-boss').show();
+	     };
+       //关闭弹窗
+		 function hidePopup() {
+	       $('.popup-boss').hide();
+	     };
+          $('.popup-boss').on('click',function (e) {
+               e.stopPropagation()
+               console.log('父亲只信了')
+               $('.popup-boss').hide()
+               return false
+           })
+
+		/*function addSelect(el) {
+               showPopup()
+			console.log(el)
+            $('.spe-gx').on('click',function (e) {
+                e.stopPropagation()
+                var val=$(this).html();
+                $(el).find('input').val(val)
+				console.log(el)
+            })
+
+        }*/
+           function addMsg (str){
+               showPopup();
+			   (function(){
+                   $(".gx-msg-gj").on("click",".spe-gx",function(e){
+                       var gxMsg = $(this).html();
+                       $(str).find('input').val(gxMsg);
+                       hidePopup();
+                       console.log(123)
+                       e.stopPropagation();
+                   });
+               })()
+
+
+           }
+
+
+	/*	$('.d1').on('click',function () {
+			console.log(this);
+            showPopup()
+            var ipt=$('#gx1');
+            $('.spe-gx').on('click',function (e) {
+                e.stopPropagation()
+               	console.log(ipt);
+               	var val=$(this).html();
+               	console.log(val)
+                if(ipt){
+                    ipt.val(val)
+                }
+                hidePopup()
+                ipt=null
+                hidePopup()
+                ipt=null
+                return false
+            })
+
+			return false
+
+
+        })
+
+
+
+           $('.d2').on('click',function () {
+               console.log(this);
+               showPopup()
+               var ipt=$('#gx2');
+               $('.spe-gx').on('click',function (e) {
+                   e.stopPropagation()
+                   console.log(ipt);
+                   var val=$(this).html();
+                   console.log(val);
+                   if(ipt){
+                       ipt.val(val)
+				   }
+
+                   hidePopup()
+				   ipt=null
+                   return false
+               })
+
+               return false
+
+
+           })*/
+
+    </script>
+  
+	
+<!--郭静-->
+</body>
+</html>

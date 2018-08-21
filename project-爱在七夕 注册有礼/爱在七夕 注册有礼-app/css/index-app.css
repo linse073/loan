@@ -1,0 +1,116 @@
+.wrapper-l-app {
+  width: 16rem;
+  margin: auto;
+  background: url(../img/bg-page-app.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 13.44rem 0 1.19466667rem;
+}
+.wrapper-l-app .yhq-title {
+  width: 8.10666667rem;
+  height: 1.10933333rem;
+  line-height: 1.10933333rem;
+  background: url(../img/yhq-tit.png) no-repeat;
+  background-size: 100% 100%;
+  margin: auto;
+  font-size: 0.59733333rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: normal;
+}
+.wrapper-l-app .swiper-container {
+  margin: 0.512rem 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-l-app .swiper-slide {
+  width: 6.656rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.wrapper-l-app .yhq-list {
+  width: 6.656rem;
+  height: 8.36266667rem;
+  background: url(../img/bg-yhq-app.png) no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.wrapper-l-app .yhq-list > h6 {
+  font-size: 0.59733333rem;
+  color: #AB7374;
+  padding-top: 1.10933333rem;
+  font-weight: normal;
+}
+.wrapper-l-app .yhq-list > p {
+  font-size: 0.85333333rem;
+  color: #CB5272;
+  line-height: 2.38933333rem;
+}
+.wrapper-l-app .yhq-list > p > span {
+  font-size: 1.70666667rem;
+  margin-left: 0.17066667rem;
+}
+.wrapper-l-app .yhq-detail-list {
+  overflow: hidden;
+  margin-top: 0.34133333rem;
+  padding: 0 0.42666667rem;
+}
+.wrapper-l-app .yhq-detail-list > li {
+  float: left;
+  width: 50%;
+}
+.wrapper-l-app .yhq-detail-list div {
+  font-size: 0.59733333rem;
+  color: #CB5272;
+  line-height: 0.85333333rem;
+  margin-bottom: 0.08533333rem;
+}
+.wrapper-l-app .yhq-detail-list p {
+  font-size: 0.42666667rem;
+  color: #AB7374;
+}
+.wrapper-l-app .btn-zc {
+  display: block;
+  width: 6.82666667rem;
+  height: 1.70666667rem;
+  background: #D86785;
+  box-shadow: 0 0 0.34133333rem 0 rgba(210, 173, 167, 0.5);
+  border-radius: 4px;
+  margin: auto;
+  font-size: 0.59733333rem;
+  color: #FFFFFF;
+}
+.wrapper-l-app .rule-title {
+  width: 8.14933333rem;
+  height: 1.10933333rem;
+  line-height: 1.10933333rem;
+  background: url(../img/rule-tit.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 1.28rem auto 0.85333333rem;
+  font-size: 0.59733333rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: normal;
+}
+.wrapper-l-app .main-rule > div {
+  width: 14.976rem;
+  margin: auto;
+  font-size: 0.59733333rem;
+  color: #AB7374;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 0.896rem;
+}
+.wrapper-l-app .main-rule > div > p {
+  margin-bottom: 0.42666667rem;
+}

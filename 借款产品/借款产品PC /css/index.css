@@ -1,0 +1,117 @@
+/*wx:2017-8-8*/
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+body{
+    background: #f4f4f4;
+}
+.banner{
+    width:100%;
+    /*background: url(../img/banner.png) no-repeat center;
+    background-size: cover;
+    height: 501px;*/
+}
+.banner img{
+    width:100%;
+}
+.container{
+    width:1200px;
+    margin: auto;
+    background: #f4f4f4;
+
+}
+.title{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#666;
+    font-size: 24px;
+    font-weight: normal;
+}
+.product-container>div{
+    background: #fff;
+    width: 1200px;
+    margin: auto;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.product-container>div ul{
+    overflow: hidden;
+    color:#333;
+    font-size: 28px;
+}
+.product-container>div ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 180px;
+}
+.product-name{
+    font-size: 28px;
+}
+.product-name span{
+    font-size: 18px;
+}
+.money{
+    font-size: 40px;
+    color: #fc7823;
+}
+.money span{
+    font-size: 18px;
+    color: #fc7823;
+    margin-left: 5px;
+}
+.product-container>div ul .money-li{
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    position: relative;
+    top:10px;
+}
+.product-container>div ul .time-li{
+    display: inline-block;
+    line-height: 30px;
+    vertical-align: middle;
+    position: relative;
+    top:10px;
+}
+.product-container>div ul .money-li div,.product-container>div ul .time-li div{
+    font-size: 18px;
+    color: #bbb;
+}
+.apply{
+    width: 166px;
+    height: 60px;
+    color: #fff;
+    background: #fc7823;
+    line-height: 60px;
+    border-radius: 5px;
+}
+.process{
+    overflow: hidden;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 60px
+}
+.process li{
+    float: left;
+    margin-left: 58.5px;
+    margin-right: 58.5px;
+    text-align: center;
+}
+.process li div{
+    margin-top: 20px;
+}
+.process-title{
+    margin-top: 0px;
+    margin-bottom: 53px;
+}
+.process-title-p{
+    margin-top: 101px;
+    background: #fff;
+    padding-top: 41px;
+}

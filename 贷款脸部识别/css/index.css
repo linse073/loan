@@ -1,0 +1,123 @@
+.top-ts{
+    width: 100%;
+    background: #eee;
+    font-size: 0.512rem;
+    color: #ec7f3c;
+    text-align: center;
+    margin-bottom: 2.7733333333333334rem;
+    line-height: 1.36rem;
+}
+.photo{
+    margin: auto;
+    width: 11.093333333333334rem;
+    height: 5.973333333333334rem;
+    padding-top: 0.6186666666666667rem;
+    text-align: center;
+    box-shadow: 0 0.021333333333333333rem 0.064rem 0.042666666666666665rem rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.photo h1{
+    font-size: 0.4693333333333333rem;
+    text-align: center;
+    color: #999;
+    font-weight: normal;
+}
+.photo .file{
+    margin: auto;
+    margin-top: 0.4053333333333333rem;
+    width: 5.76rem;
+    height: 3.541333333333333rem;
+    position: relative;
+
+
+}
+.photo .file img{
+    width: 100%;
+    height: 100%;
+
+}
+.file input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+
+}
+.user_ifo{
+    margin: auto;
+    width: 11.093333333333334rem;
+    height: 5.973333333333334rem;
+    margin-top: 0.8533333333333334rem;
+    box-shadow: 0 0.021333333333333333rem 0.064rem 0.042666666666666665rem rgba(0,0,0,0.1);
+    padding-top: 1.216rem;
+}
+.user_ifo>div{
+    line-height: 1.4506666666666668rem;
+    color: #333;
+    font-size: 0.512rem;
+    padding-left: 0.64rem;
+    margin-bottom: 0.64rem;
+}
+.user_ifo>div span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.1333333333333333rem;
+    text-align: right;
+}
+.user_ifo>div input{
+    width: 6.826666666666667rem;
+    height: 1.4506666666666668rem;
+    background: #f8f8f8;
+    margin-left: 0.64rem;
+    padding-left: 0.4266666666666667rem;
+}
+.bottom-ts{
+    color: #999;
+    text-align: center;
+    margin-top: 0.8106666666666666rem;
+    margin-bottom: 1.5146666666666666rem;
+    font-size: 0.4693333333333333rem;
+
+}
+.submit_btn{
+    width: 11.093333333333334rem;
+    height: 1.8773333333333333rem;
+    margin: auto;
+    display: block;
+    background: #eee;
+    color: #666666;
+    font-size: 0.6826666666666666rem;
+    border-radius: 5px;
+
+}
+.submit_btn.active{
+    background: #ec7f3c;
+    color: #fff;
+}
+.modal{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+    z-index: 2;
+}
+.modal-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background:rgba(0,0,0,0.6);
+    font-size: 0.512rem;
+    color: #fff;
+    padding: 0.4266666666666667rem 0.8533333333333334rem;
+    white-space:nowrap;
+}

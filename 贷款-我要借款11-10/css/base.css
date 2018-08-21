@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{-webkit-text-size-adjust:none; /*解决chrome浏览器下字体不能小于12px*/}
+body{overflow-x: hidden; font-size:14px; color:#000000; font-family:Verdana, Arial, Helvetica, sans-serif;font-family:Regular;
+        /*font-family:Helvetica Neue",​Helveti...YaHei",​Arial,​sans-serif;*//*手机字体*/ background:#FAFAFA;letter-spacing: 0.21px;}
+		
+a{outline:none; text-decoration:none;}a:hover{ text-decoration:underline;}
+ 
+html{zoom:1;}html *{outline:0;zoom:1;} html button::-moz-focus-inner{border-color:transparent!important;}
+ 
+/*设置margin和padding为0*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+ 
+table{/*border-collapse:collapse;border-spacing:0;*/}
+ 
+fieldset,a img{border:0;}
+
+
+address,caption,cite,code,dfn,em,th,var，i{font-style:normal;font-weight:normal;}
+
+
+li{list-style:none;} caption,th{text-align:left;}
+ 
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ 
+q:before,q:after{content:'';}
+ 
+input[type="submit"],input[type="reset"],input[type="button"],input[type=date],button,select{
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari 和 Chrome */
+    /*去掉苹果的默认UI来渲染按钮 、解决部分手机浏览器对border：none无效办法*/
+}　input::-webkit-input-placeholder{　　color:#aaa;
+
+/*所用的input的占位符placeholder的字体颜色*/
+
+}/*input:focus::-webkit-input-placeholder{color:#EEEEEE;}*/
+/*所用的input的占位符placeholder的字体颜色*//* CSS Document */
+
+.empty-15 {height: 15px;}
+.empty-30 {height: 30px;}
+.empty-20 {height: 20px;}
+.empty-10 {height: 10px;}
+.empty-5  {height: 5px;}
+.empty-25 {height: 25px;}
+.empty-40 {height: 40px;}
+
+ul {padding: 0px;margin: 0px;}
+
+* {
+	text-decoration: none;
+	font-style: normal;
+	list-style: none;
+}
+a:hover {text-decoration: none;}
+ 
+
+.clear{clear:both;height:0;font-size:0;line-height:0;visibility:hidden; overflow:hidden;} 

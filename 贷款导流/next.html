@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/next.css">
+</head>
+<body>
+<div class="container">
+    <b class="circle"></b>
+    <div class="select">
+        <span>借款用途</span>
+        <span class="selecthtml" >日常消费</span>
+        <b class="right-logo"></b>
+    </div>
+    <div>
+        <span>借款天数</span>
+        <span>7天</span>
+        <b class="right-logo"></b>
+    </div>
+    <div>
+        <span>请填写借款金额（1000元-3000元）</span>
+        <div>
+            <span class="reduce">—</span>
+            <span class="money">1000</span>
+            <span class="add">+</span>
+        </div>
+    </div>
+
+</div>
+<button class="next">下一步</button>
+<!--
+<form action="">
+    <select name="" id=""></select>
+    <input type="text">
+    <input type="text">
+</form>
+-->
+
+    <div class="modal">
+    <div class="select-content">
+        <p>
+            请选择实际资金用途 <br>
+            禁止用于购房、投资及各种非消费场景
+        </p>
+        <ul>
+            <li>日常消费</li>
+            <li>旅游</li>
+            <li>教育</li>
+            <li>医疗</li>
+        </ul>
+        <button class="cancel">取消</button>
+    </div>
+
+</div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $('.select').on('click',function () {
+        $('.modal').show()
+          /*  $('.select-content').addClass('active')*/
+    })
+    $('.select-content li').on('click',function (e) {
+        e.stopPropagation()
+       var val= $(this).html();
+       $('.selecthtml').html(val)
+        $('.modal').hide()
+    });
+    $('.modal').on('click',function (e) {
+
+        $('.modal').hide()
+    })
+    $('.cancel').on('click',function () {
+        $('.modal').hide()
+    })
+    $('.add').on('click',function () {
+        var val=parseInt($('.money').html())
+        if(val<3000){
+            val=val+1000;
+            $('.money').html(val)
+        }
+
+    })
+    $('.reduce').on('click',function () {
+        var val=parseInt($('.money').html())
+        if(val>1000){
+            val=val-1000;
+            $('.money').html(val)
+        }
+    })
+</script>
+</html>

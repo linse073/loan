@@ -1,0 +1,205 @@
+.top-img{
+    width: 100%;
+    height: 5.461333333333333rem;
+    background: #fc7c28;
+    position: relative;
+}
+.top-img.wtg{
+    background: #ddd;
+}
+.top-container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 16rem;
+    text-align: center;
+}
+.top-container>div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+
+}
+.state{
+    font-size: 1.024rem;
+    color: #fff;
+    display: inline-block;
+
+    padding-right: 1.1093333333333333rem;
+    padding-left: 1.1093333333333333rem;
+    border-right: 1px solid rgba(255,255,255,0.7);
+    margin-right: 0.64rem;
+
+}
+.totol-money{
+    font-size: 0.512rem;
+    color: #fff;
+}
+.totol-money .num{
+    font-weight: bold;
+    font-size: 0.768rem;
+    margin-top: 0.21333333333333335rem;
+}
+.loan-details{
+    background: #fff;
+    padding: 0.8533333333333334rem;
+
+}
+.loan-details h1{
+    text-align: center;
+    font-size: 0.5973333333333334rem;
+    color: #666;
+    position: relative;
+    margin-bottom: 0.8533333333333334rem;
+}
+.loan-details h1 b{
+    display: inline-block;
+    background: url(../img/load-logo.png) no-repeat;
+    width: 0.5546666666666666rem;
+    height: 0.64rem;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    position: relative;
+    top:-0.064rem;
+
+}
+.loan-details ul{
+    overflow: hidden;
+    width: 100%;
+}
+.loan-details ul li{
+    float: left;
+    width: 50%;
+    font-size: 0.5973333333333334rem;
+    color: #999;
+    line-height: 0.96rem;
+}
+.loan-details ul li:nth-child(even){
+    text-align: right;
+}
+body{
+    background: #fafafa;
+}
+.btn{
+    padding: 0.49066666666666664rem 1.1946666666666668rem;
+    font-size: 0.5973333333333334rem;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn.agree{
+    background: #fc7823;
+}
+.btn.cancel{
+    background: #999999;
+}
+.btnp{
+    text-align: center;
+    margin-top: 1.3653333333333333rem;
+}
+.btnp>span{
+    position: relative;
+}
+.btnp>span .time{
+    position: absolute;
+    left: 0px;
+    top:1.7066666666666668rem;
+    width: 4.906666666666666rem;
+    font-size: 0.5973333333333334rem;
+
+
+}
+.btnp .btn{
+    margin-left: 0.4266666666666667rem;
+    margin-right: 0.4266666666666667rem;
+}
+
+.modal .modal-content{
+    background: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 0.7893333333333333rem 0.64rem;
+    width: 15.146666666666667rem;
+
+    overflow: auto;
+    color: #363636;
+    font-size: 0.4266666666666667rem;
+   padding-bottom: 2rem;
+    border-radius: 5px;
+}
+.modal .modal-content h1{
+    text-align: center;
+    font-size: 0.768rem;
+
+    margin-bottom: 0.9813333333333333rem;
+}
+.modal-btn{
+    text-align: center;
+    margin-top: 0.4266666666666667rem;
+}
+.modal-btn button{
+    width: 6.4rem;
+    height: 1.28rem;
+    background: #579eee;
+    color: #fff;
+    margin-right: 0.21333333333333335rem;
+    margin-left: 0.21333333333333335rem;
+    font-size: 0.5973333333333334rem;
+
+}
+.modal-btn button:first-child{
+
+    color: #808080;
+    background: #e3e3e3;
+}
+.modal .specal-span{
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid #363636;
+}
+.modal{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    bottom:0px;
+    right: 0px;
+    background: rgba(0,0,0,0.6);
+
+}
+.modal p{
+    text-align: justify;
+}
+
+.modal h2{
+    font-size: 0.512rem;
+    margin-bottom: 0.7466666666666667rem;
+}
+.modal table{
+    text-align: center;
+    border: 1px solid #363636;
+    width: 100%;
+    margin-bottom: 0.64rem;
+    margin-top: 0.64rem;
+    border-collapse:collapse;
+}
+.modal table th{
+    line-height: 1.0666666666666667rem;
+
+}
+.modal table td{
+    line-height: 0.8533333333333334rem;
+
+}
+.modal table th,.modal table td{
+    border: 1px solid #363636;
+}

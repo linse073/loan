@@ -1,0 +1,114 @@
+.container{
+
+
+}
+.container ul{
+    padding-left:1.28rem;
+    font-size: 0.5546666666666666rem;
+    color: #333333;
+}
+.container ul li{
+    border-bottom: 1px solid #f1f1f1;
+    line-height: 2.3466666666666667rem;
+}
+.container ul li i{
+    display: inline-block;
+    background: url(../img/duihao.png) no-repeat;
+    width: 0.64rem;
+    height: 0.64rem;
+    background-size: 100% 100%;
+    /*  float: right;
+      margin-top: 0.8533333333333334rem;*/
+    margin-right: 0.4266666666666667rem;
+    position: relative;
+    top:0.10666666666666667rem;
+
+}
+.container ul li a{
+    float: right;
+    margin-right: 0.4266666666666667rem;
+}
+.container ul li b{
+    float: right;
+    margin-right: 0.4266666666666667rem;
+    background: url(../img/right.png) no-repeat;
+    width: 0.256rem;
+    height: 0.49066666666666664rem;
+    background-size: 100% 100%;
+    margin-top: 0.928rem;
+
+}
+.xy{
+    padding: 0.96rem;
+    font-size: 0.512rem;
+    color: #999999;
+    border: 1px solid #ddd;
+    width: 14.634666666666666rem;
+    margin: auto;
+    margin-top: 3.4346666666666668rem;
+}
+.sure{
+    width: 100%;
+    background: #FE6F00;
+    font-size: 0.6826666666666666rem;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 1.92rem;
+    margin-top: 0.4266666666666667rem;
+}
+.modal{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    bottom:0px;
+    right: 0px;
+    background: rgba(0,0,0,0.6);
+
+}
+.modal .modal-content{
+    background: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 0.7893333333333333rem 0.64rem;
+    width: 15.146666666666667rem;
+    height: 90%;
+    overflow: auto;
+    color: #363636;
+    font-size: 0.4266666666666667rem;
+}
+.modal .modal-content h1{
+    text-align: center;
+    font-size: 0.768rem;
+
+    margin-bottom: 0.9813333333333333rem;
+}
+.modal-btn{
+    text-align: center;
+    margin-top: 0.4266666666666667rem;
+}
+.modal-btn button{
+    width: 6.4rem;
+    height: 1.28rem;
+    background: #579eee;
+    color: #fff;
+    margin-right: 0.21333333333333335rem;
+    margin-left: 0.21333333333333335rem;
+    font-size: 0.5973333333333334rem;
+
+}
+.modal-btn button:first-child{
+
+    color: #808080;
+    background: #e3e3e3;
+}
+.modal-time>span span{
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid #363636;
+}

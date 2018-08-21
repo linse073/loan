@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/next.css">
+</head>
+<body>
+<div class="container">
+    <b class="circle"></b>
+    <div class="select">
+        <span>身份验证</span>
+        <b class="right-logo"></b>
+        <span class="orign">去完善</span>
+    </div>
+    <div>
+        <span>运营商验证</span>
+        <b class="right-logo"></b>
+        <span class="orign">去完善</span>
+
+
+    </div>
+    <div>
+        <span>紧急联系人</span>
+        <b class="right-logo"></b>
+        <span class="orign">去完善</span>
+    </div>
+    <div>
+        <span>地址信息</span>
+        <b class="right-logo"></b>
+        <span class="orign">去完善</span>
+
+
+    </div>
+
+
+</div>
+<button class="next">立即申请</button>
+<!--
+<form action="">
+    <select name="" id=""></select>
+    <input type="text">
+    <input type="text">
+</form>
+-->
+
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $('.select').on('click',function () {
+        $('.modal').show()
+        /*  $('.select-content').addClass('active')*/
+    })
+    $('.select-content li').on('click',function () {
+        var val= $(this).html();
+        $('.selecthtml').html(val)
+        $('.modal').hide()
+    })
+    $('.cancel').on('click',function () {
+        $('.modal').hide()
+    })
+    $('.add').on('click',function () {
+        var val=parseInt($('.money').html())
+        if(val<3000){
+            val=val+1000;
+            $('.money').html(val)
+        }
+
+    })
+    $('.reduce').on('click',function () {
+        var val=parseInt($('.money').html())
+        if(val>1000){
+            val=val-1000;
+            $('.money').html(val)
+        }
+    })
+</script>
+</html>

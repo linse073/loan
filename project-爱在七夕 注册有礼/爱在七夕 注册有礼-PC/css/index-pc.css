@@ -1,0 +1,108 @@
+.wrapper-l-pc {
+  width: 100%;
+  background: url(../img/bg-page-pc.png) no-repeat top center;
+  background-size: cover;
+  margin: auto;
+  min-width: 1200px;
+  padding: 455px 0 32px;
+}
+.wrapper-l-pc .main-yhq {
+  width: 1000px;
+  margin: auto;
+}
+.wrapper-l-pc .yhq-title {
+  width: 190px;
+  height: 26px;
+  line-height: 26px;
+  background: url(../img/yhq-tit.png) no-repeat;
+  background-size: cover;
+  margin: auto;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: normal;
+}
+.wrapper-l-pc .yhq-list {
+  margin: 20px 0;
+  overflow: hidden;
+}
+.wrapper-l-pc .yhq-list > li {
+  float: left;
+  width: 156px;
+  height: 196px;
+  background: url(../img/bg-yhq.png) no-repeat;
+  background-size: cover;
+  margin: 0 22px;
+  text-align: center;
+}
+.wrapper-l-pc .yhq-list h6 {
+  font-size: 14px;
+  color: #AB7374;
+  padding-top: 26px;
+  font-weight: normal;
+}
+.wrapper-l-pc .yhq-list > li > p {
+  font-size: 20px;
+  color: #CB5272;
+  line-height: 56px;
+}
+.wrapper-l-pc .yhq-list p > span {
+  font-size: 40px;
+  margin-left: 4px;
+}
+.wrapper-l-pc .yhq-detail-list {
+  overflow: hidden;
+  margin-top: 8px;
+  padding: 0 10px;
+}
+.wrapper-l-pc .yhq-detail-list > li {
+  float: left;
+  width: 50%;
+}
+.wrapper-l-pc .yhq-detail-list div {
+  font-size: 14px;
+  color: #CB5272;
+  line-height: 20px;
+  margin-bottom: 2px;
+}
+.wrapper-l-pc .yhq-detail-list span {
+  font-size: 10px;
+  color: #AB7374;
+}
+.wrapper-l-pc .btn-zc {
+  display: block;
+  width: 180px;
+  height: 40px;
+  background: #D86785;
+  box-shadow: 0 0 8px 0 rgba(210, 173, 167, 0.5);
+  border-radius: 4px;
+  margin: auto;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.wrapper-l-pc .main-rule {
+  width: 800px;
+  margin: auto;
+}
+.wrapper-l-pc .rule-title {
+  width: 191px;
+  height: 26px;
+  line-height: 26px;
+  background: url(../img/rule-tit.png) no-repeat;
+  background-size: cover;
+  margin: 30px auto 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: normal;
+}
+.wrapper-l-pc .main-rule > div {
+  font-size: 14px;
+  color: #AB7374;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 21px;
+}
+.wrapper-l-pc .main-rule > div > p {
+  margin-bottom: 8px;
+}

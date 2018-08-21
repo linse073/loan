@@ -1,0 +1,208 @@
+#pc{
+  .container{
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1920px;
+    background: #fff url(../img/bg.jpg) no-repeat center;
+    background-size: 1920px 1316px;
+    height: 1316px;
+    padding-top: 473px;
+  }
+  .title1{
+    background:  url(../img/title1.png) no-repeat center;
+    width: 151px;
+    height: 24px;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .title-txt{
+    text-align: center;
+    font-size: 14px;
+    color: #222222;
+    text-align: center;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+  .title-txt b{
+    font-size: 18px;
+    color: #101010;
+    text-align: center;
+    line-height: 21px;
+    font-weight: 500;
+  }
+  .coupon{
+    background: url(../img/couponglod.png) no-repeat;
+    width: 339px;
+    height: 113px;
+    margin: auto;
+    background-size: 100% 100%;
+    padding-top: 13px;
+    padding-left: 26px;
+  }
+  .coupon .left{
+    float: left;
+  }
+  .coupon .right{
+    float: right;
+  }
+  .number{
+    color: #fff;
+  }
+  .money{
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 47px;
+  }
+  .date{
+    background: url(../img/date.png) no-repeat;
+    width: 76px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12px;
+    color: #B3884F;
+    line-height: 22px;
+    margin-left: 5px;
+    position: relative;
+    top:-8px;
+  }
+  .rule{
+    font-size: 12px;
+    color: #FFFFFF;
+    line-height: 17px;
+  }
+  .rel{
+    font-size: 12px;
+    color: #FFEBC9;
+    line-height: 17px;
+  }
+  .right button{
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(-71deg, #BD9259 0%, #EBCD95 100%);
+    box-shadow: 0 3px 6px 0 rgba(186,2,5,0.20);
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 17px;
+    margin-right: 23px;
+  }
+  .right button.disabled{
+    background-image: linear-gradient(-216deg, #EAEAEA 2%, #B8B8B8 95%);
+    box-shadow: 0 3px 6px 0 rgba(186,2,5,0.20);
+    font-size: 12px;
+    color: #868686;
+    letter-spacing: 0;
+
+  }
+  .time span{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #B3884F;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+  }
+  .wait{
+    margin-top: 22px;
+    margin-right: 15px;
+  }
+  .wait p{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #B3884F;
+    line-height: 17px;
+  }
+  .title2{
+    background: url(../img/goodtitle.png) no-repeat center;
+    margin-top: 40px;
+  }
+
+  .couponred{
+    background: url(../img/couponred.png) no-repeat center;
+  }
+  .couponred .right button{
+    background-image: linear-gradient(-262deg, #FB2B47 0%, #DC022A 100%);
+    box-shadow: 0 3px 6px 0 rgba(186,2,5,0.20);
+  }
+  .couponred .rel{
+    color: #FFB3BF;;
+    text-align: left;
+  }
+  .couponred .date{
+    color: #DC022A;
+  }
+  .coupon-list{
+    width:1200px;
+    text-align: center ;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .coupon-list li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .title-rule{
+    background: url(../img/rule.png) no-repeat center;
+    margin-top: 40px;
+  }
+  .activerule{
+    font-size: 14px;
+    color: #DC032A;
+    line-height: 21px;
+    text-align: justify;
+    width: 750px;
+    margin: 30px  auto 40px;
+  }
+  .modal{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    bottom:0px;
+    right:0px;
+    background:rgba(0,0,0,0.6);
+    z-index: 999;
+  }
+  .modal .modal-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 172px;
+    background: #fff;
+    font-size: 18px;
+    color: #DC032A;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 28px;
+    padding-top: 40px;
+    text-align: center;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+  .modal-content button{
+    width: 180px;
+    height: 44px;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    background-image: linear-gradient(-262deg, #FB2B47 0%, #DC022A 100%);
+    box-shadow: 0 8px 12px 0 rgba(117,0,0,0.20);
+    border-radius: 100px;
+    margin-top: 40px;
+  }
+}
